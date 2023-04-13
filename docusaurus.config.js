@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'My Site',
-    tagline: 'Dinosaurs are cool',
+    title: 'Themes.js - Documentation',
+    tagline: 'The easiest way to manage your themes',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -38,17 +38,13 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
+                    routeBasePath: '/',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                },
+                blog: false,
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
@@ -60,12 +56,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
         // Replace with your project's social card
-        image: 'img/docusaurus-social-card.jpg',
+        image: 'img/logo.png',
         navbar: {
-            title: 'My Site',
+            title: 'Themes.js',
             logo: {
-                alt: 'My Site Logo',
-                src: 'img/logo.svg',
+                alt: 'Themes.js - Logo',
+                src: 'img/logo.png',
             },
             items: [{
                     type: 'docSidebar',
@@ -73,9 +69,8 @@ const config = {
                     position: 'left',
                     label: 'Tutorial',
                 },
-                { to: '/blog', label: 'Blog', position: 'left' },
                 {
-                    href: 'https://github.com/facebook/docusaurus',
+                    href: 'https://github.com/themesjs/themes.js',
                     label: 'GitHub',
                     position: 'right',
                 },
